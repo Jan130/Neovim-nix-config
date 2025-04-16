@@ -90,6 +90,8 @@ with final.pkgs.lib; let
     # language servers, etc.
     lua-language-server
     nil # nix LSP
+
+    ripgrep
   ];
 in {
   # This is the neovim derivation
