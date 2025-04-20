@@ -86,12 +86,14 @@ with final.pkgs.lib; let
     tokyonight-nvim
   ];
 
-  extraPackages = with pkgs; [
+  extraPackages = [
     # language servers, etc.
-    lua-language-server
-    nil # nix LSP
+    pkgs.lua-language-server
+    pkgs.nil # nix LSP
 
-    ripgrep
+    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+
+    pkgs.ripgrep
   ];
 in {
   # This is the neovim derivation
