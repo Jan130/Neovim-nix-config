@@ -90,8 +90,7 @@ with final.pkgs.lib; let
     # language servers, etc.
     pkgs.lua-language-server
     pkgs.nil # nix LSP
-
-    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    pkgs.clang-tools
 
     pkgs.ripgrep
   ];
