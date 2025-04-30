@@ -84,6 +84,7 @@ with final.pkgs.lib; let
     # ^ bleeding-edge plugins from flake inputs
     which-key-nvim
     tokyonight-nvim
+    vimtex
   ];
 
   extraPackages = [
@@ -93,6 +94,7 @@ with final.pkgs.lib; let
     pkgs.clang-tools
 
     pkgs.ripgrep
+    pkgs.texliveMedium
   ];
 in {
   # This is the neovim derivation
