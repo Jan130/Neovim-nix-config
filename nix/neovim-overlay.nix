@@ -94,7 +94,10 @@ with final.pkgs.lib; let
     pkgs.clang-tools
 
     pkgs.ripgrep
-    pkgs.texliveFull
+    (pkgs.texlive.combine {
+      inherit (pkgs.texlive) scheme-medium
+      wrapfig;
+    })
   ];
 in {
   # This is the neovim derivation
