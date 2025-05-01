@@ -94,7 +94,7 @@ with final.pkgs.lib; let
     pkgs.clang-tools
 
     pkgs.ripgrep
-    pkgs.texliveMedium
+    pkgs.texliveFull
   ];
 in {
   # This is the neovim derivation
