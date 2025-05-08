@@ -85,6 +85,7 @@ with final.pkgs.lib; let
     which-key-nvim
     tokyonight-nvim
     vimtex
+    markdown-preview-nvim
   ];
 
   extraPackages = [
@@ -92,6 +93,7 @@ with final.pkgs.lib; let
     pkgs.lua-language-server
     pkgs.nil # nix LSP
     pkgs.clang-tools
+    pkgs.marksman # markdown lsp
 
     pkgs.ripgrep
     (pkgs.texlive.combine {
