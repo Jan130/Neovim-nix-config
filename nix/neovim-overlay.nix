@@ -98,7 +98,7 @@ with final.pkgs.lib; let
     pkgs.ripgrep
     (pkgs.texlive.combine {
       inherit (pkgs.texlive) scheme-medium
-      wrapfig epigraph;
+      wrapfig epigraph nextpage;
     })
   ];
 in {
