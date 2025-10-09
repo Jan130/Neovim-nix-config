@@ -86,6 +86,7 @@ with final.pkgs.lib; let
     tokyonight-nvim
     vimtex
     markdown-preview-nvim
+    rust-tools-nvim
   ];
 
   extraPackages = [
@@ -100,6 +101,7 @@ with final.pkgs.lib; let
       inherit (pkgs.texlive) scheme-medium
       wrapfig epigraph nextpage;
     })
+    pkgs.rust-analyzer
   ];
 in {
   # This is the neovim derivation
