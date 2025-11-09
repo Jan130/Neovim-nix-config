@@ -86,7 +86,7 @@ with final.pkgs.lib; let
     tokyonight-nvim
     vimtex
     markdown-preview-nvim
-    rust-tools-nvim
+    rustaceanvim
   ];
 
   extraPackages = [
