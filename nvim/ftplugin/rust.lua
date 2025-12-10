@@ -5,6 +5,7 @@ end
 
 local root_files = {
   '.git',
+  'Cargo.toml'
 }
 
 vim.lsp.start {
